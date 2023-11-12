@@ -46,8 +46,8 @@ def SE(y,x):
   return array([g0, g1])
 def Final Value (energy):
 ###################################
-#C a l c u l a t e s p s i f o r t h i s v a l u e o f E , and
-#r e t u r n s t h e v a l u e o f p s i a t p o i n t b t o c heck d i v e r g e n c e .
+#Calculates psi for this value of E , and
+#returns the value of psi at point b to c heck divergence .
 #####################################
   global y
   global E
@@ -59,7 +59,7 @@ yo = array([1.0 , 0.0])       # i n i t i a l p s i and p s i−d o t .
 x = linspace(0, b ,steps)
 E1 = float(sys.argv[ 1 ])
 E2 = float(sys.argv[ 2 ])
-answer = brentq( Final_Value, E1, E2 )     # use b r e n t q t o s o l v e f o r E−> p s i=0 a t b .
+answer = brentq( Final_Value, E1, E2 )     # use brentq to solve for E−> psi=0 at b.
 
 print("Eigenvalue found at E = %.8 f" % answer)
 plot(x , y[ : , 0 ])
