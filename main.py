@@ -1,6 +1,6 @@
 from pylab import∗
 from scipy.integrate import odeint
-from s ci p y.optimize import brentq
+from scipy.optimize import brentq
 import sys
 
 ##########################################################
@@ -22,7 +22,7 @@ import sys
   ############################################################
 
 b = 2.0
-Vo = 20.0     # Potential outsid e square well
+Vo = 20.0     # Potential outside square well
 steps = 100
 E = 0.0       # global variable , changed by Final Value( )
 def V( x ):
